@@ -1,0 +1,9 @@
+/** 
+ * formatCurrency()
+
+generateID()
+
+capitalize()
+
+formatDate()
+*/

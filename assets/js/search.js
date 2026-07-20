@@ -1,0 +1,7 @@
+/**
+ * searchProducts()
+
+highlightResult()
+
+clearSearch()
+ */

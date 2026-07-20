@@ -1,0 +1,9 @@
+/** 
+ * validateProduct()
+
+validatePrice()
+
+validateStock()
+
+validateName()
+*/

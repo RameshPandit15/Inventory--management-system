@@ -1,0 +1,97 @@
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    padding: var(--space-md);
+  
+}
+.stats-card{
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    padding: var(--space-xl);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+.card-icon{
+    width: 50px;
+    height: 50px;
+
+}
+.card-icon img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-value{
+    font-size: var(--text-lx);
+    font-weight: 700;
+}
+.products-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    border: 1px solid var(--border);
+    margin: var(--space-md);
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    width: 60%;
+    
+}
+.section-header{
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+
+}
+.section-header button{
+    border: 1px solid var(--border);
+    background-color: var(--background);
+    padding: 4px;
+    width: 70px;
+    border-radius: var(--radius-sm);
+}
+.table-container{
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+.product-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.product-table th{
+    text-align: left;   
+    padding: var(--space-md)
+}
+.product-table td{
+    padding: var(--space-md);
+}
+.product-table tbody tr{
+    border-top: 1px solid var(--border);
+}
+.button{
+    justify-content: space-between;
+    border: 1px solid var(--border);
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    
+}
+.status-badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding:4px 10px;
+    border-radius:999px;
+    font-size:var(--text-sm);
+}

@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    grid-template-columns:var(--sidebar-width) 1fr;
+    min-height: 100vh;
+    font-family:"Inter", sans-serif;
+    background-color:var(--background)
+
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: var(--sidebar-width);
+}
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
