@@ -79,11 +79,21 @@ function deleteProduct(id)
 
 };
 
-let editingProduct = null;
 
-function editProducts()
+function editProducts(id, newPrice, newStock)
 {
   const product = products.find((product) => product.id === id);
-}
+  if(!product)
+  {
+    return "Product not found";
+  }
+  
+    product.price = newPrice,
+    product.stock = newStock
+
+    product.ststus = product.stock < 10 ? "Low Stock" : "In Stock";
+    renderProducts();
+};
+ editProducts(id, newPrice, newStock);
 
 
