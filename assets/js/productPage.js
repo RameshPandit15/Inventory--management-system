@@ -28,4 +28,8 @@ function renderProducts() {
 };
 renderProducts();
 
-
+const form = document.getElementById("form");
+const newForm = document.getElementById("newForm");
+form.addEventListener("click", () => {
+  newForm.showModal();
+});
