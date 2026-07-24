@@ -2,10 +2,10 @@
 
     /* Colors */
     --primary:#4F46E5;
-    --primary-hover:#4338CA;
+    --primary-hover:#9ee7ff;
 
     --background:#f1f4f7;
-    --surface:#FFFFFF;
+    --surface:#FFFFFF; /* sidebar*/
 
     --text-primary:#111827;
     --text-secondary:#6B7280;

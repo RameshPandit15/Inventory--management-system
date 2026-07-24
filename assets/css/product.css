@@ -1,38 +1,62 @@
-.stats-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-lg);
-    padding: var(--space-sm);
-  
-}
-.stats-card{
+
+.search-section{
     display: flex;
-    align-items: flex-start;
-    gap: var(--space-lg);
-    padding: var(--space-xl);
+    width: 99%;
+    justify-content: space-between;
     border: 1px solid var(--border);
-    background: var(--surface);
+    height: 10vh;
+    margin: var(--space-sm);
     border-radius: var(--radius-sm);
-    box-shadow: var(--shadow);
+    background: var(--surface);
+    padding: var(--space-md)
 }
-.card-content{
+.search-bar{
     display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
+    width:250px;
+    border: 1px solid var(--border);
+    height: 5vh;
+    border-radius: var(--radius-sm);
 }
-.card-icon{
-    width: 50px;
-    height: 50px;
+.search-bar input{
+    width: 200px;
+    outline: none;
+    border: none;
+    margin: var(--space-sm);
 
 }
-.card-icon img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.search-bar button{
+    border: none;
+    background-color: var(--surface);
 }
-.card-value{
-    font-size: var(--text-lx);
-    font-weight: 700;
+.section-button{
+    padding: var(--space-sm);
+    border: 1px solid var(--border);
+    height: 5vh;
+    border-radius: var(--radius-sm);
+}
+.section-button select{
+    outline: none;
+    border: none;
+}
+.product-button{
+    display: flex;
+    height: 5vh;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    
+}
+.product-button button{
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: blue;
+    border-radius: var(--radius-sm);
+    color: var(--surface)
+}
+.product-button button:hover{
+    background-color: var(--primary-hover);
+    color: black;
 }
 .products-section{
     display: flex;
@@ -44,7 +68,7 @@
     margin: var(--space-sm);
     background: var(--surface);
     border-radius: var(--radius-sm);
-    width: 60%;
+    width: 99%;
     
 }
 .section-header{
@@ -87,22 +111,13 @@
     border-radius: var(--radius-sm);
     
 }
-.status-badge{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding:4px 10px;
-    border-radius:999px;
-    font-size:var(--text-sm);
-}
 .footer{
     display: flex;
     margin-top: auto;
     border: 1px solid var(--border);
-    align-items: center;
     justify-content: center;
-    border-radius: var(--radius-sm);
-    background-color: var(--surface);
-    padding: var(--space-md);
+    align-items: center;
     width: 100%;
+    padding: var(--space-md);
+    background-color: var(--surface);
 }

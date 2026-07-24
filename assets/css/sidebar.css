@@ -7,7 +7,7 @@
     gap: var(--space-xl);
     border-right: 1px solid var(--border);
     position: relative;
-     background: var(--surface);
+    background: var(--surface);
     
 }
 .logo{
@@ -43,7 +43,6 @@
 }
 .nav-link:hover{
     background-color: var(--primary-hover);
-  
     color: var(--text-tertiary);
     transform: scale(0.9);
 }
@@ -58,6 +57,6 @@
     text-decoration: none;
 }
 .nav-link img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
