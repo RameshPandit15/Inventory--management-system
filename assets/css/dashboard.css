@@ -53,6 +53,9 @@
     align-items: center;
 
 }
+.section-header h3{
+    color:rgb(6, 212, 212);
+}
 .section-header button{
     border: 1px solid var(--border);
     background-color: var(--background);
@@ -65,20 +68,25 @@
     overflow-x: auto;
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
+    overflow: scroll;
 }
 .product-table{
     width: 100%;
     border-collapse: collapse;
+   
 }
 .product-table th{
     text-align: left;   
-    padding: var(--space-md)
+    padding: var(--space-md);
+    background-color: blueviolet;
+    color: var(--text-tertiary);
 }
 .product-table td{
     padding: var(--space-md);
 }
 .product-table tbody tr{
     border-top: 1px solid var(--border);
+    background-color: var(--background-table);
 }
 .button{
     justify-content: space-between;

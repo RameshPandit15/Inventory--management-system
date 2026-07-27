@@ -30,6 +30,31 @@ renderProducts();
 
 const form = document.getElementById("form");
 const newForm = document.getElementById("newForm");
+const cancelbTN = document.getElementById("cancel");
+const saveBtn = document.getElementById("saveProduct");
+const productName = document.getElementById("text");
+const productCategory =document.getElementById("category");
+const productPrice = document.getElementById("price");
+const productQuantity = document.getElementById("stock");
+const productSupplier = document.getElementById("supplier");
+const productImage = document.getElementById("upload");
+const productStock = document.getElementById("stock");
 form.addEventListener("click", () => {
   newForm.showModal();
 });
+
+cancelbTN.addEventListener("click", (event) => {
+  event.preventDefault();
+newForm.close();
+});
+
+saveBtn.addEventListener("click", saveProduct);
+
+function saveProduct()
+{
+  const addNewProduct = products.find((product) => product.id === id && product.name === name);
+  if(addNewProduct)
+  {
+    return addNewProduct.stock += productStock;
+  }
+}

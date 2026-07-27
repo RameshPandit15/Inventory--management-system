@@ -3,12 +3,14 @@
     justify-content: space-between;
     padding: var(--space-lg);
     border-bottom: 1px solid var(--border);
-     background: var(--surface);
+    background: var(--surface);
+    position: sticky;
 }
 .header-actions{
     display: flex;
     align-items: center;
     gap: var(--space-xl);
+    
 }
 .search-form{
     display: flex;

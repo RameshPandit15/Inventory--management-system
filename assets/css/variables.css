@@ -6,7 +6,8 @@
 
     --background:#f1f4f7;
     --surface:#FFFFFF; /* sidebar*/
-    --sidebar:rgb(246, 238, 238);
+    --sidebar:#f6eeee;
+    --background-table: #f8f2f2; /* table-background */
 
     --text-primary:#111827;
     --text-secondary:#6B7280;

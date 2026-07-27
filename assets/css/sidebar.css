@@ -9,6 +9,7 @@
     position: relative;
     background: var(--sidebar);
     
+    
 }
 .logo{
     display: flex;
@@ -44,7 +45,11 @@
 .nav-link:hover{
     background-color: var(--primary-hover);
     color: var(--text-tertiary);
-    transform: scale(0.9);
+    
+}
+.nav-link:focus{
+    background-color: var(--primary-hover);
+    color: var(--text-tertiary); 
 }
 .nav-icon img {
     transition: filter 0.3 ease;

@@ -60,6 +60,7 @@ addProduct(6, "Monitor", "Electronics", 65000, 15);
 addProduct(7, "Freez", "Electronics", 15000, 25);
 addProduct(8, "Micro wave", "Home & Kitche", 10000, 10);
 addProduct(9, "Induction", "Home & Kitchen", 12000, 40);
+addProduct(10, "Frying pan", "House & Kitchen", 1500, 30);
 
 
 function deleteProduct(id)
