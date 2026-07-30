@@ -4,6 +4,7 @@ function renderProducts() {
     const row = document.createElement("tr");
 
     row.innerHTML = `
+      <td>${product.id}</td>
       <td>${product.name}</td>
       <td>${product.category}</td>
       <td>Rs.${product.price.toLocaleString("en-NP")}</td>
@@ -52,9 +53,36 @@ saveBtn.addEventListener("click", saveProduct);
 
 function saveProduct()
 {
-  const addNewProduct = products.find((product) => product.id === id && product.name === name);
+  let userData = {};
+  const addNewProduct = userData.find((product) => product.id === id && product.name === productName);
   if(addNewProduct)
   {
     return addNewProduct.stock += productStock;
   }
+  if(addNewProduct.name === 0)
+  {
+    alert( "product name is required");
+  }
+  if(addNewProduct.price < 0)
+  {
+    alert("Price can't be negative!");
+  }
+  if(addNewProduct.stock < 0 )
+  {
+    alert( "Stock can't be negative!");
+  }
+  
+
+  const newProduct = {
+    id: addNewProduct.length + 1,
+    name: addNewProduct.productName,
+    category: addNewProduct.productCategory,
+    price: addNewProduct.productPrice,
+    stock: addNewProduct.productStock,
+    supplier: addNewProduct.productSupplier,
+
+  }
+  products.push(newProduct);
+  return newProduct;
+  
 }

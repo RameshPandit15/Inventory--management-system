@@ -44,7 +44,7 @@
     margin: var(--space-sm);
     background: var(--surface);
     border-radius: var(--radius-sm);
-    width: 60%;
+    width: 65%;
     
 }
 .section-header{
@@ -54,7 +54,7 @@
 
 }
 .section-header h3{
-    color:rgb(6, 212, 212);
+    color:rgb(5, 53, 53);
 }
 .section-header button{
     border: 1px solid var(--border);

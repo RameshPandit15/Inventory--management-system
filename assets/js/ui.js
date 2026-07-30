@@ -18,6 +18,7 @@ function renderProducts() {
     const row = document.createElement("tr");
 
     row.innerHTML = `
+      <td>${product.id}</td>
       <td>${product.name}</td>
       <td>${product.category}</td>
       <td>Rs.${product.price.toLocaleString("en-NP")}</td>
