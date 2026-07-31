@@ -138,7 +138,7 @@
 .form-group{
     display: flex;
     flex-direction: column;
-   padding: var(--space-sm);
+    padding: var(--space-sm);
     
 }
 .form-group input, select{

@@ -52,7 +52,7 @@
     color: var(--text-tertiary); 
 }
 .nav-icon img {
-    transition: filter 0.3 ease;
+    transition: filter 0.3 ease 100ms;
 }
 .logout{
     margin-top: auto;
