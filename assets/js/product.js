@@ -80,21 +80,63 @@ function deleteProduct(id)
 
 };
 
-
-function editProducts(id, newPrice, newStock)
+let editingProduct = null;
+function editProducts(productId)
 {
-  const product = products.find((product) => product.id === id);
+  editingProduct = productId;
+
+  const product = products.find((product) => product.id === productId);
   if(!product)
   {
     return "Product not found";
   }
-  
-    product.price = newPrice,
-    product.stock = newStock
 
-    product.ststus = product.stock < 10 ? "Low Stock" : "In Stock";
-    renderProducts();
+  document.getElementById("cancel");
+  document.getElementById("saveProduct");
+  document.getElementById("text");
+  document.getElementById("category");
+  document.getElementById("price");
+  document.getElementById("stock");
+  document.getElementById("supplier");
+  document.getElementById("stock");
 };
- editProducts(id, newPrice, newStock);
 
+function updateProduct(){
+
+  const productName = document.getElementById("text").value;
+  const productCategory =document.getElementById("category").value;
+  const productPrice = document.getElementById("price").value;
+  const productQuantity = document.getElementById("stock").value;
+  const productSupplier = document.getElementById("supplier").value;
+  const productImage = document.getElementById("upload").value;
+  const productStock = document.getElementById("stock").value;
+
+  const product = products.find((product) => product.id === editingProduct);
+  if(!product)
+  {
+    return "Product not found";
+  }
+
+  product.name = productName;
+  product.category = productCategory;
+  product.price = Number(productPrice);
+  product.stock = Number(productStock); 
+  product.productSupplier = productSupplier;
+  product.productImage = productImage;
+  product.quantity = productQuantity;
+
+  product.status = product.stock < 10 ? "Low Stock" : "In Stock";
+  renderProducts(products);
+
+   document.getElementById("cancel").value = "";
+  document.getElementById("saveProduct").value = "";
+  document.getElementById("text").value = "";
+  document.getElementById("category").value = "";
+  document.getElementById("price").value = "";
+  document.getElementById("stock").value = "";
+  document.getElementById("supplier").value = "";
+  document.getElementById("stock").value = "";
+
+  editingProduct = null;
+}
 

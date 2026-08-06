@@ -15,7 +15,7 @@ function renderProducts() {
         </span>
       </td>
       <td>
-        <button type="button" class="button" onclick="editProducts(${product.id})">
+        <button type="button" class="button" onclick="updateProduct(${product.id})">
           <img src="../assets/Icons/pencil.png" alt="pencil-icon">
         </button>
         <button type="button" class="button" onclick="deleteProduct(${product.id})">
